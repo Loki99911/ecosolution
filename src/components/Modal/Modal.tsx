@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { CloseButton, ModalBody, Overlay } from './Modal.styled';
 import { IProps } from './types';
@@ -17,15 +17,19 @@ export default function Modal({ onCloseModal }: IProps) {
     };
   }, []);
 
-  useEffect(() => {
-    const onPressEsc = (event: { code: string }) => {
+  const onPressEsc = useCallback(
+    (event: { code: string; }) => {      
       if (event.code === 'Escape') {
         onCloseModal();
       }
-    };
+    },
+    [onCloseModal],
+  );
+
+  useEffect(() => {
     window.addEventListener('keydown', onPressEsc);
-    return window.removeEventListener('keydown', onPressEsc);
-  }, [onCloseModal]);
+    return ()=>window.removeEventListener('keydown', onPressEsc);
+  }, [onPressEsc]);
 
   const handleOverlay = (event: React.MouseEvent) => {
     if (event.currentTarget === event.target) {
@@ -36,7 +40,7 @@ export default function Modal({ onCloseModal }: IProps) {
     <Overlay onClick={handleOverlay}>
       <ModalBody>
         <CloseButton onClick={() => onCloseModal()}>close</CloseButton>
-        <LinksList/>
+        <LinksList />
       </ModalBody>
     </Overlay>,
     modalRoot,

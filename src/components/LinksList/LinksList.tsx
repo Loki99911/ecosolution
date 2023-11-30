@@ -6,7 +6,7 @@ export default function LinksList() {
   return (
     <List>
       {linksList.map((link) => (
-        <li>
+        <li key={link.title}>
           <ListLink to={link.path}>{link.title}</ListLink>
         </li>
       ))}

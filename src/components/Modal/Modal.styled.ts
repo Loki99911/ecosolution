@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Overlay = styled.div`
   position: fixed;
@@ -6,39 +6,37 @@ export const Overlay = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(23, 61, 51, 0.25);
   backdrop-filter: blur(2px);
   opacity: 1;
-  transition: opacity 0.3s ease-in-out, left 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    left 0.3s ease-in-out;
 `;
 
 export const ModalBody = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
-  /* padding: 40px 20px 32px 20px; */
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 32px;
-  background-color: var(--main-white);
-  /* z-index: 2; */
+  width: calc(100% - 40px);
+  height: calc(100% - 72px);
+  /* width: 320px; */
+  padding: 24px;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 25px;
+  background: rgba(23, 61, 51, 0.75);
+  backdrop-filter: blur(12.5px);
   @media screen and (min-width: 768px) {
-    width: 494px;
-    padding-top: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 320px;
+    height: 701px;
+    transform: translate(0, 0);
+    top: 42px;
+    right: 30px;
   }
 `;
-
 
 export const CloseButton = styled.button`
   position: absolute;
@@ -54,7 +52,6 @@ export const CloseButton = styled.button`
   outline: none;
   cursor: pointer;
 `;
-
 
 // export const SubmitButtonQRCode = styled.button`
 //   display: flex;
