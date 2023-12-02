@@ -14,6 +14,6 @@ export const LogoLink = styled(NavLink)`
   gap: 8px;
   align-items: baseline;
   &:hover {
-    color: red;
+    color: #97d28b;
   }
 `;

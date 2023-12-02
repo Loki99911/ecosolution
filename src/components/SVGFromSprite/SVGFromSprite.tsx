@@ -3,7 +3,7 @@ import { ISvgProps } from './types';
 
 export default function SVGFromSprite({ name, width, height, color }: ISvgProps) {
   return (
-    <svg fill={color} width={width} height={height}>
+    <svg fill={color} stroke={color} width={width} height={height}>
       <use href={`${Sprite}#${name}`} />
     </svg>
   );
