@@ -5,14 +5,6 @@ export const GlobalStyle = createGlobalStyle`
   /* height: 100vh; */
 }
 
-*,
-*::before,
-*::after {
-  /* box-sizing: border-box; */
-  margin: 0;
-  padding: 0;
-}
-
 img {
   display: block;
   height: auto;

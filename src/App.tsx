@@ -1,6 +1,5 @@
 // import { useState } from 'react'
 import { useState } from 'react';
-import './App.css';
 import { GlobalStyle } from './GlobalStyles';
 import AboutSection from './components/AboutSection/AboutSection';
 import CasesSection from './components/CasesSection/CasesSection';
