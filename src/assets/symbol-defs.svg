@@ -1,9 +1,5 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="arrow-right" viewBox="0 0 30 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M18.108 8.382l7.617 7.617-7.617 7.617"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.8824" d="M4.392 16h21.12"></path>
-</symbol>
 <symbol id="logo-L" viewBox="0 0 55 32">
 <path fill="#173d33" style="fill: var(--color1, #173d33)" d="M37.919 22.771c-0.115-0.273-9.583-18.774-9.738-19.029-0.327-0.772-0.812-1.47-1.425-2.049s-1.34-1.028-2.136-1.317-1.644-0.414-2.492-0.366c-0.847 0.048-1.675 0.268-2.433 0.646s-1.427 0.906-1.968 1.55c-0.541 0.645-0.942 1.392-1.177 2.197s-0.299 1.647-0.189 2.477c0.11 0.83 0.393 1.628 0.83 2.345 0.115 0.273 9.177 17.981 9.332 18.236 0.116 0.274 0.251 0.539 0.406 0.793 0.327 0.772 0.812 1.47 1.425 2.049s1.34 1.028 2.136 1.317 1.644 0.414 2.492 0.366c0.847-0.048 1.675-0.268 2.433-0.646s1.427-0.906 1.968-1.55 0.942-1.393 1.177-2.197c0.235-0.804 0.299-1.647 0.189-2.477s-0.393-1.628-0.83-2.345z"></path>
 <path fill="#97d28b" style="fill: var(--color2, #97d28b)" d="M26.985 10.252c0.58-0.61 1.027-1.331 1.312-2.119s0.402-1.625 0.345-2.46c-0.058-0.835-0.289-1.648-0.68-2.391s-0.933-1.397-1.592-1.924c-0.659-0.527-1.421-0.914-2.239-1.137s-1.673-0.278-2.513-0.161c-0.84 0.117-1.646 0.404-2.369 0.842s-1.346 1.019-1.831 1.705c-0.204 0.214-15.577 18.897-15.748 19.139-0.58 0.61-1.027 1.331-1.312 2.119s-0.403 1.625-0.345 2.46c0.058 0.835 0.289 1.649 0.68 2.391s0.933 1.398 1.592 1.924c0.659 0.527 1.421 0.914 2.239 1.137s1.673 0.278 2.513 0.161c0.84-0.117 1.646-0.404 2.369-0.842s1.346-1.019 1.831-1.705c0.204-0.214 15.577-18.897 15.748-19.138z"></path>
@@ -21,6 +17,19 @@
 <symbol id="sms" viewBox="0 0 32 32">
 <path fill="none" stroke="#97d28b" style="stroke: var(--color2, #97d28b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22.667 27.333h-13.333c-4 0-6.667-2-6.667-6.667v-9.333c0-4.667 2.667-6.667 6.667-6.667h13.333c4 0 6.667 2 6.667 6.667v9.333c0 4.667-2.667 6.667-6.667 6.667z"></path>
 <path fill="none" stroke="#97d28b" style="stroke: var(--color2, #97d28b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M22.667 12l-4.173 3.333c-1.373 1.093-3.627 1.093-5 0l-4.16-3.333"></path>
+</symbol>
+<symbol id="arrow-down" viewBox="0 0 30 32">
+<path fill="#97d28b" style="fill: var(--color1, #97d28b)" d="M29.867 16c0 8.247-6.686 14.933-14.933 14.933s-14.933-6.686-14.933-14.933c0-8.247 6.686-14.933 14.933-14.933s14.933 6.686 14.933 14.933z"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M19.789 17.728l-4.856 4.316-4.856-4.316"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.7784" d="M14.932 9.956v11.968"></path>
+</symbol>
+<symbol id="dot" viewBox="0 0 30 32">
+<path d="M29.867 16c0 8.247-6.686 14.933-14.933 14.933s-14.933-6.686-14.933-14.933c0-8.247 6.686-14.933 14.933-14.933s14.933 6.686 14.933 14.933z"></path>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 31 32">
+<path fill="#97d28b" style="fill: var(--color1, #97d28b)" d="M15.515 0.485c8.569 0 15.515 6.946 15.515 15.515s-6.946 15.515-15.515 15.515c-8.569 0-15.515-6.946-15.515-15.515s6.946-15.515 15.515-15.515z"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.9697" d="M17.086 12.076l3.924 3.924-3.924 3.924"></path>
+<path fill="none" stroke="#173d33" style="stroke: var(--color2, #173d33)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="0.9697" d="M10.020 16h10.88"></path>
 </symbol>
 </defs>
 </svg>

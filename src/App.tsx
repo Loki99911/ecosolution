@@ -1,34 +1,37 @@
 // import { useState } from 'react'
-import { useState } from 'react'
-import './App.css'
-import { GlobalStyle } from './GlobalStyles'
-import About from './components/About/About'
-import Cases from './components/Cases/Cases'
-import ContactUs from './components/ContactUs/ContactUs'
-import FAQ from './components/FAQ/FAQ'
-import FooterComp from './components/FooterComp/FooterComp'
-import HeaderComp from './components/HeaderComp/HeaderComp'
-import Main from './components/Main/Main'
-import Modal from './components/Modal/Modal'
+import { useState } from 'react';
+import './App.css';
+import { GlobalStyle } from './GlobalStyles';
+import AboutSection from './components/AboutSection/AboutSection';
+import CasesSection from './components/CasesSection/CasesSection';
+import ContactUsSection from './components/ContactUsSection/ContactUsSection';
+import FAQSection from './components/FAQSection/FAQSection';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Modal from './components/Modal/Modal';
+import MainSection from './components/MainSection/MainSection';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
   const onCloseModal = () => {
-    setModalOpen(prev=>!prev);
+    setModalOpen((prev) => !prev);
   };
   return (
     <>
-      <HeaderComp onCloseModal={onCloseModal} />
-      <Main />
-      <About />
-      <Cases />
-      <FAQ />
-      <ContactUs />
-      <FooterComp />
+      <Header onCloseModal={onCloseModal} />
+      <Main>
+        <MainSection />
+        <AboutSection />
+        <CasesSection />
+        <FAQSection />
+        <ContactUsSection />
+      </Main>
+      <Footer />
       {modalOpen && <Modal onCloseModal={onCloseModal} />}
       <GlobalStyle />
     </>
   );
 }
 
-export default App
+export default App;

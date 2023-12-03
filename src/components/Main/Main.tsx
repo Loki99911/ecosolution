@@ -1,7 +1,10 @@
-import React from 'react'
-
-export default function Main() {
+import Container from '../Container/Container';
+import { MainWrapper } from './Main.styled';
+import { MainProps } from './types';
+export default function Main({ children }: MainProps) {
   return (
-    <div>Main</div>
-  )
+    <MainWrapper>
+      <Container>{children}</Container>
+    </MainWrapper>
+  );
 }

@@ -23,15 +23,17 @@ h2,
 h3,
 h4,
 h5,
-h6,
-ul,
-ol {
+h6{
+  font-family: Oswald;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
 
-ul {
+ul,ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
